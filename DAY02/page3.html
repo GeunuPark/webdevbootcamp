@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $= png] {
+            border: 10px solid red;
+        }
+        img[src $= jpg] {
+            border: 20px dotted blue;
+        }
+        #d1 > p {
+            background-color: yellow;
+        }
+        #d2 p {
+            background-color: gray;
+        }
+        #d1 {
+            width: 200px;
+            height: 100px;
+            background: pink;
+        }
+        #d2 {
+            width: 200px;
+            height: 100px;
+            background: lime;
+        }
+    </style>
+</head>
+<body>
+    <img src="day2imagedownload.png" alt="아이들" width="400" height="200"><br>
+    <img src="디스커버리신발.jpg" alt="디스커버리신발"><br>
+    <!-- hr 가로줄 -->
+    <div id="d1">
+        <!-- p태그 문단 (한줄 밑으로) -->
+        <p> 내가 좋아하는 음식</p>
+        <div id="d11">
+            <p>나는 한식을 좋아합니다.</p>
+            <p>나는 분식을 좋아합니다.</p>
+        </div>
+    </div>
+    <div id="d2">
+        <p>내가 싫어하는 음식</p>
+        <div id="d22">
+            <p>나는 홍차를 싫어합니다.</p>
+            <p>나는 중국음식을 싫어합니다.</p>
+        </div>
+    </div>
+</body>
+</html>

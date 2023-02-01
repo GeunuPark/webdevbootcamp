@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        li:nth-child(2n) {
+            background-color: orange;
+        }
+
+        li:nth-child(2n+1) {
+            background-color: yellow;
+        }
+
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            background: silver;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+        }
+
+        #top2 {
+            background-color: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border: 10px dotted;
+            box-shadow: 10px 10px azure;
+        }
+
+        #center {
+            padding: 30px;
+            width: 800px;
+            height: 500px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 메뉴들어갈 부분 -->
+            <ul>
+                <li>
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page30.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page10.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            <!-- 고정된 화면 (장바구니)-->
+            장바구니
+        </div>
+        <div id="center">
+            <!-- 해당페이지 화면 -->
+            <table border="1" align="left">
+                <tr align="center">
+                    <td width="20" height="120">1</td>
+                    <td width="100" height="120">포테이토</td>
+                    <td width="200" height="120">후라이드 포테이토</td>
+                    <td width="100" height="120">1000원</td>
+                    <td width="180" height="120"><img src="감자튀김.jpg" alt="" width="180" height="120"></td>
+                </tr>
+                <tr align="center">
+                    <td width="20" height="120">1</td>
+                    <td width="100" height="120">포테이토</td>
+                    <td width="200" height="120">후라이드 포테이토</td>
+                    <td width="100" height="120">1000원</td>
+                    <td width="180" height="120"><img src="감자튀김.jpg" alt="" width="180" height="120"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
